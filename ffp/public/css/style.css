@@ -1,0 +1,163 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.home-header {
+  text-align: center;
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.home-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.home-image-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px); /* Adjusted to account for footer height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  background: none; /* Removed background color */
+}
+
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.home-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px; /* Increased padding */
+  background-color: #343a40;
+  color: #ffffff;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.form-floating {
+  position: relative;
+}
+
+#toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.logo-container {
+  background-color: #ffffff; /* White background */
+  border-radius: 50%; /* Perfectly round corners */
+  padding: 10px; /* Padding for the logo */
+  margin: 0 5px; /* Space around logos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Ensure the container is square */
+  height: 60px; /* Ensure the container is square */
+}
+
+.footer-logo {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right; /* Align text to the right */
+}
+
+.footer-right p {
+  margin: 0;
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.footer-right p strong {
+  font-weight: bold; /* Make the "Contact Us" text bold */
+}
+
+.components-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.component {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .components-container {
+        grid-template-columns: 1fr; /* Mengubah menjadi 1 kolom pada perangkat mobile */
+    }
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .components-container {
+        grid-template-columns: 1fr;
+    }
+}

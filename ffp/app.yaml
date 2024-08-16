@@ -1,0 +1,14 @@
+runtime: php81
+env: standard
+
+
+runtime_config:
+  document_root: public
+
+skip_files:
+  .env
+
+env_variables:
+  APP_LOG: errorlog
+  APP_KEY: base64:kKOZVz2VUn8tB3oqWMwl+fnPxZaEco0zCoJIUA294dw=
+  STORAGE_DIR: /tmp
